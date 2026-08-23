@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            background-color: #035352;
+        }
+
+        .conatiner {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 'head main '
+                'sidebar  main'
+                'footer  footer';
+        }
+
+
+        .box {
+            border: 3px solid antiquewhite;
+            background-color: #f3e8bc;
+        }
+
+        #head {
+            grid-area: head;
+        }
+
+        #sidebar {
+            grid-area: sidebar;
+        }
+
+        #main {
+            grid-area: main;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="conatiner">
+        <div id="head" class="box">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis et officiis, repellendus maxime natus
+            voluptatum delectus beatae temporibus dolorum repellat minima ipsam dolores distinctio omnis! Impedit, modi
+            ipsum quo optio tempora sapiente pariatur? Nobis!
+        </div>
+        <div id="sidebar" class="box">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem magni rerum ipsam a optio itaque fugit
+            culpa! Iure blanditiis nesciunt quis laudantium sed? Sint at reiciendis, corporis perspiciatis inventore
+            reprehenderit id quasi exercitationem eius?
+        </div>
+        <div id="main" class="box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa labore, ab tenetur ex quidem possimus
+            pariatur sapiente ullam veniam atque, et amet iure temporibus accusantium quibusdam praesentium laborum nemo
+            aperiam.
+        </div>
+    </div>
+    <footer class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque illo velit cum.
+    </footer>
+</body>
+
+</html>

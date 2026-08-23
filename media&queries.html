@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .box {
+            background-color: blueviolet;
+            color: black;
+            font-size: 28px;
+            text-align: center;
+            display: none;
+
+        }
+
+        @media (max-width:300px) {
+
+            #box1 {
+                display: block;
+                background-color: aqua;
+            }
+        }
+
+        @media (min-width:300px) and (max-width:500px) {
+
+            #box2 {
+                display: block;
+                background-color: violet;
+            }
+        }
+
+        /* media queries is like if condition */
+        @media (min-width:500px) and (max-width:800px) {
+
+            #box3 {
+                display: block;
+                background-color: rgb(99, 0, 228);
+            }
+        }
+        @media (min-width:800px) {
+
+            #box4 {
+                display: block;
+                background-color: rgb(34, 0, 228);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box1">Mai ek iphone hoon</div>
+    <div class="box" id="box2">Mai ek tablet hoon</div>
+    <div class="box" id="box3">Mai ek computer hoon</div>
+    <div class="box" id="box4">Mai ek curved display monitor hoon</div>
+</body>
+
+</html>

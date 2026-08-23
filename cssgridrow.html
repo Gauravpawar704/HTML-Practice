@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid rows</title>
+    <style>
+        .conatiner{
+            display:grid;
+            grid-template-rows: 200px 100px 200px ;
+            grid-auto-rows: 50px;
+            grid-template-columns: 200px 100px 200px;
+            grid-gap: 1rem;
+        }
+
+        .item{
+            box-shadow:13px 13px  #9bb8be;
+            padding: 25px;
+            text-align: center;
+            border-radius: 10px;
+            border: 2px solid #168793;
+            background-color: #82d4e7;
+        }
+        </style>
+</head>
+<body>
+    <div class="conatiner">
+        <div class="item">This is item-1</div>
+        <div class="item">This is item-2</div>
+        <div class="item">This is item-3</div>
+        <div class="item">This is item-4</div>
+        <div class="item">This is item-5</div>
+        <div class="item">This is item-6</div>
+        <div class="item">This is item-7</div>
+        <div class="item">This is item-8</div>
+        <div class="item">This is item-9</div>
+    </div>
+</body>
+</html>

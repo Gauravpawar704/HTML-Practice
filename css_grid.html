@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS GRID</title>
+    <style>
+        *{
+            background-color: #035352;
+        }
+        .container {
+            display: grid;
+            grid-template-areas: 'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer';
+            grid-gap: 1rem;
+            padding: 12px 23px;
+        }
+
+        .box {
+            background-color: #f3e8bc;
+            border: 3px solid antiquewhite;
+        }
+
+        #navbar {
+            grid-area: navbar;
+        }
+
+        #section {
+            grid-area: section;
+        }
+
+        #aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- <div class="box">item-1</div>
+        <div class="box">item-2</div>
+        <div class="box">item-3</div>
+        <div class="box">item-4</div>
+        <div class="box">item-5</div>
+        <div class="box">item-6</div>
+        <div class="box">item-7</div>
+        <div class="box">item-8</div>
+        <div class="box">item-9</div>
+        <div class="box">item-10</div>
+        <div class="box">item-11</div>
+        <div class="box">item-12</div>
+        <div class="box">item-13</div>
+        <div class="box">item-14</div> -->
+
+        <div id="navbar" class="box">
+            HOME ABOUT CONTACT US
+        </div>
+        <div id="section" class="box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias maiores deserunt nesciunt dolores quae
+            necessitatibus non est reiciendis provident. Omnis ut dolor illo reiciendis officia, deserunt soluta quae
+            sed pariatur error aperiam optio atque. Eum.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio est minus, placeat soluta dolorem unde
+            assumenda. Earum fugit tenetur, eligendi fuga nemo debitis molestiae laborum ad natus nesciunt sapiente,
+            adipisci libero dicta nihil laudantium ut sed enim eius illo voluptatum!
+        </div>
+        <div id="aside" class="box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore expedita quibusdam quisquam nemo.
+
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, perspiciatis, itaque dignissimos dolore
+            possimus rerum consequuntur natus fugiat eius optio maiores minima suscipit minus officiis reiciendis eum
+            sapiente vero labore eos nam quod asperiores! Nulla dignissimos voluptatem maiores explicabo natus!</div>
+    </div>
+    <footer class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ipsa vero sapiente.
+    </footer>
+</body>
+
+</html>

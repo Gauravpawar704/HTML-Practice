@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS grid and queries</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 'nav nav nav nav'
+                'section section section aside'
+                'footer footer footer footer';
+            /* grid-template-columns: repeat(auto-fit, minMax(200px, 1fr)); */
+        }
+
+        .border-now {
+            border: 2px solid black;
+            padding: 20px;
+            background-color: blanchedalmond;
+        }
+
+        nav {
+            grid-area: nav;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+            text-align: center;
+            font-style: oblique;
+        }
+
+        @media only screen and (max-width:300px) {
+            body {
+                background-color: red;
+            }
+
+            .container {
+                grid-template-areas: 'nav nav nav nav'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+
+            span {
+                display: block;
+                text-align: cente;
+            }
+        }
+
+        @media only screen and (min-width:300px) and (max-width:500px) {
+            body {
+                background-color: green;
+            }
+
+            .container {
+                grid-template-areas: 'nav nav nav nav'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+
+            aside {
+                display: none;
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media(min-width:500px) and (max-width:800px) {
+            body {
+                background-color: blue;
+            }
+
+            .container {
+                grid-template-areas: 'nav nav nav nav'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media(min-width:800px) {
+            body {
+                background-color: yellowgreen;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="border-now">
+            <span>Home</span>
+            <span>About</span>
+            <span>Services</span>
+            <span>Contact us</span>
+        </nav>
+        <section class="border-now">
+            <h2>Learn css in hindi</h2>
+        </section>
+        <aside class="border-now">
+            <h1>More about us </h1>
+        </aside>
+    </div>
+    <footer class="border-now"><b>
+            &copy Code With Gaurav</b></footer>
+</body>
+
+</html>

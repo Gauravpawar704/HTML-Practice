@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display property</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        header {
+            margin: auto;
+            width: 925px;
+            border-style: double;
+            border: 3px solid rgb(73 62 137);
+        }
+
+        img {
+            margin: auto;
+            padding: 3px;
+            display: block;
+            width: 300px;
+        }
+
+        h3 {
+            font-family: 'Courier New', Courier, monospace;
+            margin: 30px;
+            text-align: center;
+        }
+
+        .container {
+            width: 920px;
+            border: 3px solid purple;
+            background-color: #33e1d1;
+            border-radius: 10px;
+            margin: 33px auto;
+            overflow: auto;
+            /* width: 48%; */
+        }
+
+        .hi {
+            border: 3px solid gray;
+            padding: 12px 4px;
+            margin: 12px 4px;
+            background: rgb(248, 238, 238);
+            display: inline-block;
+            width: 48%;
+        }
+
+        .box {
+            float: left;
+            width: 48%;
+        }
+
+        .toyy {
+            float: left;
+            clear: both;
+            width: 48%;
+        }
+
+        .why {
+            float: left;
+            width: 48%;
+        }
+
+        .by {
+            float: left;
+            width: 48%;
+        }
+
+        .btn {
+            font-family: cursive;
+            background-color: rgb(76, 134, 94);
+            padding: 6px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            font-size: 12px;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            color: rgb(112, 206, 154);
+
+        }
+
+        .hi:hover {
+            color: rgb(248, 238, 238);
+            background-color: rgb(104 144 147);
+            border: 3px solid rgb(89, 226, 25);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="top">
+        <img src="filters_format(avif) (1).avif" alt="">
+        <h3>ONE AND ONLY ONE LENGENDRY <b>PORSCHE 911 GT3</b></h3>
+    </header>
+    <div class="container">
+        <h3>The info about porsche 911 GT3 </h3>
+        <div id="box" class="hi">
+            <h4 class="heading">Introdution to the porsche 911 GT3</h4>
+            <p>The Porsche 911 GT3 is a high-performance sports car designed for driving enthusiasts. It combines
+                powerful engineering,
+                lightweight construction, and advanced aerodynamics to deliver an exciting driving experience on both
+                roads and race
+                tracks.</p>
+        </div>
+        <div id="toyy" class="hi">
+            <h4 class="heading">Engine and performance</h4>
+            <p>The Porsche 911 GT3 is powered by a naturally aspirated 4.0-litre flat-six engine. It produces impressive
+                horsepower and
+                offers quick acceleration with a high top speed. Its precise handling and responsive steering make every
+                drive
+                enjoyable.</p>
+        </div>
+        <div id="why" class="hi">
+            <h4 class="heading">Design and Features</h4>
+            <p>The GT3 features an aggressive design with a large rear wing, sporty body kit, and aerodynamic elements.
+                Inside, it has
+                premium materials, supportive sports seats, a digital instrument cluster, and modern infotainment
+                features for comfort
+                and convenience.</p>
+        </div>
+        <div id="by" class="hi">
+            <h4 class="heading">Why the Porsche 911 GT3 is special</h4>
+            <p>The Porsche 911 GT3 is admired for its perfect balance of speed, control, and everyday usability. It
+                reflects Porsche's
+                racing heritage while remaining practical enough for road use, making it one of the most respected
+                sports cars in the
+                world.</p>
+        </div>
+        <a href="https://www.porsche.com/middle-east/_india_/models/911/911-gt3-models/911-gt3/"
+            class="btn">Readmore</a>
+        <button class="btn">Contact us</button>
+    </div>
+</body>
+
+</html>

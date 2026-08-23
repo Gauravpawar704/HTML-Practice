@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow Box and Text</title>
+    <style>
+        .container {
+            display: flex;
+            /* gap:20px; */
+        }
+
+        .card {
+            padding: 23px 12px;
+            margin: 23px 12px;
+            /* border: 2px solid rgb(252, 227, 0); */
+            background-color: khaki;
+            /* box shadow offset-x offset-y color: ; */
+            /* box shadow offset-x offset-y blur-radius color: ; */
+            /* box shadow offset-x offset-y blur-radius spread-radius color: ; */
+            /* rgb color without alpha */
+            box-shadow: 13px 13px 10px rgb(255, 230, 0), 2px 4px 5px red;
+            /* rgb color with alpha */
+            /* box-shadow: 13px 13px 10px rgba(255, 230, 0, 0.5); */
+        }
+
+        .card h3 {
+            text-shadow: 2px 3px 4px white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="item-1">
+            <H3>Card 1</H3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio recusandae dicta sequi aut beatae, unde
+                ducimus earum quod veritatis sapiente sunt explicabo a fugit eum facere molestias quam repellendus,
+                illum maiores nobis inventore fuga? Esse, architecto eum. Illo iste accusamus sit temporibus ab?Lorem
+                ipsum, dolor sit amet consectetur adipisicing elit. Molestias, laudantium.</p>
+        </div>
+        <div class="card" id="item-2">
+            <h3>Card 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio recusandae dicta sequi aut beatae, unde
+                ducimus earum
+                quod veritatis sapiente sunt explicabo a fugit eum facere molestias quam repellendus, illum maiores
+                nobis inventore
+                fuga? Esse, architecto eum. Illo iste accusamus sit temporibus ab?</p>
+        </div>
+        <div class="card" id="item-3">
+            <h3>Card 3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio recusandae dicta sequi aut beatae, unde
+                ducimus earum
+                quod veritatis sapiente sunt explicabo a fugit eum facere molestias quam repellendus, illum maiores
+                nobis inventore
+                fuga? Esse, architecto eum. Illo iste accusamus sit temporibus ab?</p>
+        </div>
+        <div class="card" id="item-4">
+            <h3>Card 4</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio recusandae dicta sequi aut beatae, unde
+                ducimus earum
+                quod veritatis sapiente sunt explicabo a fugit eum facere molestias quam repellendus, illum maiores
+                nobis inventore
+                fuga? Esse, architecto eum. Illo iste accusamus sit temporibus ab?</p>
+        </div>
+    </div>
+</body>
+
+</html>
