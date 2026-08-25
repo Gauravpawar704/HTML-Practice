@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript string funtion</title>
+</head>
+
+<body>
+    <div class="container">
+
+    </div>
+
+    <script>
+        var a = "this is a string";
+        console.log(a);
+        // first occurence of a substring
+        var position=a.indexOf('is');
+        console.log(position);
+
+        // last occurence of a substring
+        position=a.lastIndexOf('is');
+        console.log(position);
+
+        // Substring from a string
+        var substr=a.slice(0,8);
+        console.log(substr);
+
+        // var replace=a.replace('string','gaurav');
+        // console.log(a);
+        // console.log(replace);
+
+        // console.log(a.toUpperCase());
+        // console.log(a.toLowerCase());
+
+        var newString=a.concat('New String');
+        console.log(newString);
+
+        var strWithWhiteSpace= "     this contains                whitespace";
+        console.log(strWithWhiteSpace);
+        console.log(strWithWhiteSpace.trim());
+
+        // var char3=a.charAt(2);
+        var char3=a.charCodeAt(2); // not every imp
+        console.log(char3);
+
+        console.log(a[2]); //slice
+    </script>
+</body>
+
+</html>
