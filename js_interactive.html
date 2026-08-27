@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction using alter,confirm,propmt</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to my page</h1>
+    </div>
+    <script>
+        //alert in-browser Javascript-does not return anything
+        // let a=alert("this is a message");
+        // console.log(a);
+
+
+        // let name = prompt("What is your name ? ", "Guest");
+        // console.log(name);
+
+        // let deleetePost = confirm("Do you really want to delete this post");
+        // if (deleetePost) {
+        //     console.log("Your post has been deleted successfully");
+        // }
+        // else {
+        //     console.log("Your post has not been deleted successfully");
+        // }
+        // console.log(deleetePost);
+
+
+        //age confirmation
+
+        let container = document.querySelector(".container");
+
+        if (container) {
+            let age = Number(prompt("Enter age: "));
+
+            if (age >= 18) {
+                console.log("You are eligible for vist the webpage");
+            } else {
+                console.log("You are not eligible for vist the webpage");
+                container.style.display = "none"
+            }
+        }
+        // console.log(age);
+    </script>
+</body>
+
+</html>

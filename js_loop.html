@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops in Javascript</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Now we are studying loops in js</h1>
+    </div>
+    <script>
+        let a = "this is about loop"
+        console.log(a.toUpperCase())
+        // let i = 0;
+        // // let name = "gaaurav"
+        // for (i = 0; i < 6; i++) {
+        //     console.log(i);
+        //     // console.log(name);
+        // }
+
+        let friend = ["Gaurav", "Raj", "Suyash", "Omkar", "Aryan"];
+        // for (let i = 0; i < friend.length; i++) {
+        //     console.log("Welcome to " + friend[i])
+        // }
+
+        // Modern style 
+        // friend.forEach(function f(element) {
+        //     console.log("Welcome to " + element + " modern Javascript");
+        // });
+
+        // for (element of friend) {
+        //     console.log("Welcome " + element + " to modern Javascript");
+        // }
+
+        let employee = {
+            Name: "Gaurav sunil pawar",
+            salary: 80000,
+            dept: "Software developer",
+            city: "Dahisar"
+        }
+
+        //Use this loop to iterate in javascript
+        for (key in employee) {
+            console.log(`The ${key} of employee is ${employee[key]}`)
+        }
+
+        // While javascript
+
+        let i = 0;
+        while (i < 4) {
+            console.log(`${i} is leass than 4`);
+            i++;
+        }
+
+        //do while loop
+        let j = 34
+        do {
+            console.log(`${j} is leass than 4 but we are inside the do while loop`);
+            i++;
+        } while (j < 4);
+
+       
+    </script>
+</body>
+
+</html>
