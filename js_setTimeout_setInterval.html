@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript setTimeout and setInterval</title>
+</head>
+
+<body>
+    <div class="container">
+        Time now <span id="time"></span>
+    </div>
+    <script>
+        console.log('This is tutorial');
+        // serTimeout --> allows us to run the function once after the interval of time
+        // clearTimeout  --> allows us to run the function repatedly after the interval of time
+        function greet(name, byText) {
+            console.log("Hello good morining " + name + " " + byText);
+        }
+
+        // greet();
+
+        // setTimeout(() => {
+        //     greet("Gaurav","take care");
+        // }, 5000);
+
+        // timeOut = setTimeout(greet, 1000, "Gaurav", "take care");
+        // console.log(timeOut);
+        // clearTimeout(timeOut);
+
+
+        // setTimeout(greet(),5000);--> wrong as it is calling the function inside set time out 
+    
+
+        // intervalOut=setInterval(greet,1000,"Gaurav","Take care");
+        // clearInterval(intervalOut);
+
+        function displayTime(){
+            time= new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML=time;
+        }
+        // setInterval(displayTime,5000 );
+    </script>
+</body>
+
+</html>

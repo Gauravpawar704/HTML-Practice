@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+
+            width: 100vw;
+            height: 100vh;
+
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        body {
+            /* background-image: url("img/car4.jpg"); */
+            background-color: red;
+            margin: 0;
+            min-height: 100vh;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        header h1 {
+            text-align: center;
+        }
+
+        .navbar {
+            width: 70%;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 12px 20px;
+
+            display: flex;
+            list-style: none;
+            gap: 30px;
+
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .navbar:hover {
+            background: rgba(255, 255, 255, 0.18);
+            transform: translateY(-2px);
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: whitesmoke;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .navbar a:hover {
+            transform: translateY(-2px);
+            color: rgb(250, 123, 123);
+        }
+
+        .hero-content {
+            border: 2px solid rgba(255, 255, 255, 0.12);
+            width: 50%;
+            color: black;
+            text-align: left;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border-radius: 18px;
+            font-size: 20px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            float: right;
+        }
+
+        .hero-content p big {
+            color: rgb(134, 0, 0);
+            font-size: 29px;
+        }
+
+        .hero-content #btn {
+            /* margin-left: 10px;
+    margin-top: 10px; */
+
+            position: relative;
+            left: 210px;
+            display: inline-block;
+            width: fit-content;
+            padding: 12px 25px;
+            background-color: #111;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .about-card {
+            width: 40%;
+            background: rgba(255, 255, 255, 0.12);
+            color: aliceblue;
+            margin-left: 20px;
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border-radius: 10px;
+            font-size: 20px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+    <video class="bg-video" autoplay muted playsinline>
+        <source src="img/videoplayback - Trim.mp4">
+    </video>
+    <header>
+        <h1>One of the legnedry car Porsche 911 GT3</h1>
+        <nav class="navigation">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="Froms.html">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <H2>Once a warrior,Always a Warrior</H2>
+                <p><big>T</big>he porsche 911 GT3 is more than a sports car-it is a machine bulit around
+                    precision,descipline,and an uncompromising connextion between driver and road.Born from
+                    Porsche's motorsport heritage,the GT3 carries the spirt of the track into every corner.its
+                    naturally aspirated flat-siz engine,sharp handling,and unmistakable design are not simplty about
+                    speed;they represent engineering pushedtoward perfection.Every line,everysound,and every
+                    response has a purpose.A true driver doesn't simply control the GT3-they become part of the
+                    machine</p>
+                <button id="btn">Explore more about car </button>
+            </div>
+        </section>
+
+        <section id="about" style="display: none;">
+            <div class="about-card">
+                <h2>Born for the track</h2>
+                <p>The porsche 911 GT3 is a raod-legal sport car with the soul of race car.inspired by Porsche
+                    Motorsport,it combines a high-revving naturally aspirated flat-six engine with precise handling
+                    and track-focused aerodynamics.Every detail is designed to delievry and intense and connected
+                    driving experience.</p>
+            </div>
+
+            <div class="about-card">
+                <h2>Pure Performance</h2>
+                <p>The GT3 is bulit around one simple idea:pure driving performance.From its aggressive aerodynamic
+                    design to its sharp steering and powerful braking,every component works together with purpose.it
+                    ins't just about going fast-it is about control,precision,and the feeling of beging completely
+                    connected to the road</p>
+            </div>
+        </section>
+    </main>
+    <script src="chatgpt_js.js"></script>
+</body>
+
+</html>

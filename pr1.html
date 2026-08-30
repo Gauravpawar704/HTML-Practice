@@ -1,98 +1,4 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-        rel="stylesheet">
-    <style>
-        body {
-            display: flex;
-            color: antiquewhite;
-            margin: 0;
-            background-color: black;
-            background: url("pr_1.png") no-repeat center center/cover;
-            min-height: 100vh;
-        }
-
-        section {
-            justify-content: center;
-            margin: 15px 91px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .hero {
-            display: flex;
-        }
-
-        .hero-content {
-            width: 45%;
-            margin-left: 8%;
-        }
-
-        .navigation {
-            font-family: "Bree serif";
-            font-size: 20px;
-            display: flex;
-        }
-
-        li {
-            list-style: none;
-            padding: 20px 23px;
-            white-space: nowrap;
-        }
-
-        h1 {
-            font-family: fantasy;
-            font-size: 4rem;
-        }
-    </style>
-</head>
-
-<body>
-    <header>
-        <nav class="navbar">
-            <ul class="navigation">
-                <li class="item">Home</li>
-                <li class="item">About</li>
-                <li class="item">Gallery</li>
-                <li class="item">Contact us</li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                 Hero Section 
-                <h1>Porsche 911 GT3</h1>
-
-                <p>
-                    The Porsche 911 GT3 isn't just another sports car—it's a machine built for people who truly love
-                    driving.
-                    Inspired by
-                    Porsche's racing heritage, the GT3 combines breathtaking performance with everyday usability, making
-                    it
-                    one of
-                    the most
-                    iconic driver's cars in the world.
-                </p>
-
-                <button class="btn">Explore more...</button>
-            </div>
-        </section>
-    </main>
-</body>
-
-</html> -->
-
+<!-- to get prev challenge code to pr1.html file -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -100,39 +6,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <style>
-        .container {
-            display: grid;
-            /* grid-template-columns: 200px 100px 200px 100px; */
-            grid-template-rows: 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr;
-            gap: 32px;
+        body {
+            background: url("img/porsche\ 911.png");
+            min-height: 100vh;
+            margin: 0;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
 
-        .item {
-            /* grid-column: 4/2; */
-            border: 2px solid grey;
-            width: 100px;
-            height: 100px;
-            background-color: antiquewhite;
+        .navbar {
+            position: relative;
+            width: 100%;
+            max-width: 1300px;
+            margin: 20px auto;
+            padding: 10px 18px;
+            box-sizing: border-box;
+
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            list-style: none;
+
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 25px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            height: 57px;
+        }
+
+        .navbar li {
+            padding: 20px;
+        }
+
+        .navbar a {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            letter-spacing: 0.3;
+            color: antiquewhite;
+            text-decoration: none;
+        }
+
+        .navbar img {
+            position: absolute;
+            left: 18px;
+            top: 9%;
+        }
+
+        .navbar h2 {
+            position: absolute;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            font-weight: 6000;
+            color: white;
+            letter-spacing: 2px;
+            left: 80px;
+            top: 0;
+        }
+
+        section h4 {
+            margin-top: 60px;
+            padding-left: 50px;
+            color: red;
+            font-size: 40px;
+        }
+
+        section sup {
+            /* margin-bottom: 20px; */
+            padding-left: 51px;
+            color: white;
+            font-size: 100px
+        }
+
+        section h1,
+        p {
+            color: gray;
+            padding-left: 62px;
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="item">This is box 1</div>
-        <div class="item">This is box 2</div>
-        <div class="item">This is box 3</div>
-        <div class="item">This is box 4</div>
-        <div class="item">This is box 5</div>
-        <div class="item">This is box 5</div>
-        <div class="item">This is box 5</div>
-        <div class="item">This is box 5</div>
-        <div class="item">This is box 5</div>
-        <div class="item">This is box 5</div>
-        <div class="item">This is box 5</div>
-        <div class="item">This is box 5</div>
-    </div>
+    <header>
+        <nav class="navigation">
+            <ul class="navbar">
+                <img src="img/porsche.png" alt="Porsche Logo" class="logo" width="50 " height="50">
+                <h2>PORSCHE</h2>
+                <li><a href="">Home</a></li>
+                <li><a href=""> Model</a></li>
+                <li><a href="">Performance</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Specs</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact form</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h4>PORSCHE<br><SUP>911 GT3</SUP></h4>
+        <H1>BULIT FOR PURISTS.<BR>BORN ON THE TRACK</H1>
+
+        <P>The new 911 GT3 devlivers race-bred performance<br>with iconic design.Engineerd to thrill,on track<br>or on
+            the road.</P>
+    </section>
 </body>
 
 </html>

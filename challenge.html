@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 100%;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .bg-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+
+            width: 100vw;
+            height: 100vh;
+
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .navbar {
+            width: 70%;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 12px 20px;
+
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+
+            list-style: none;
+
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 18px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #ff4d4d;
+        }
+
+        .hero {
+            display: flex;
+            min-height: 100vh;
+            align-items: center;
+        }
+
+
+        .info h3 {
+            color: #f1f1f1;
+            font-size: 23px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #d4af37;
+            font-weight: 700;
+            letter-spacing: 4px;
+            font-size: 45px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            /* margin-top: 20px; */
+            text-align: center;
+        }
+
+        .info p {
+            border: 2px solid white;
+            border-radius: 18px;
+
+            font-family: cursive;
+            padding: 20px;
+            margin: 12px;
+            color: #f2f2f2;
+
+            font-weight: 700;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.7;
+
+            text-align: left;
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <video class="bg-video" autoplay muted loop>
+        <source
+            src="Mysterious Dragon Samurai Kneeling at Torii Gate 4k Live Wallpaper - Live 4k Wallpaper (1080p, h264).mp4">
+    </video>
+    <header>
+        <H1>A WARRIOR</H1>
+        <nav class="navigation">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Context</a></li>
+                <li><a href="#">Suggestion</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="info">
+                <h3>ONCE WARRIOR,ALWAYS A WARRIOR</h3>
+                <P>The samurai were warriors shaped by discipline ,honor and courage.They adhered to principles of
+                    Bushido,approaching every challenge with composure and unwavering resolve. To a samurai, the sword
+                    represented more than a weapon: it symbolized resposiblity ,loyalty, and determenation.Whether facin
+                    victory or defeat, they maintained their diginty and refused to be governed by fear. A true warrior
+                    may
+                    set aside his sword,but the warrior within never truly fades.</P>
+                <p>Their leagacy reminds us that true strength is not measured onlt by physical power,but by the courage
+                    to
+                    stand firm ,the wisdom to act with restraint, and the resolve to remain qaitful to one's principles
+                </p>
+            </div>
+        </section>
+    </main>
+
+</body>
+<footer>&copy this is page made for prove my self to i am the one who can also do</footer>
+
+</html>
