@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Filter Test</title>
+</head>
+
+<body>
+
+    <script>
+
+        let cars = [
+            { name: "GT3", speed: 320 },
+            { name: "911 Carrera", speed: 293 },
+            { name: "Taycan", speed: 260 }
+        ];
+
+        let result_cars = cars.filter(function (car) {
+            return car.speed > 290;
+        });
+
+        console.log(result_cars);
+
+    </script>
+
+</body>
+
+</html>
